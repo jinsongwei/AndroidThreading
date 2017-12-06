@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.williamjin.threading.MainActivity">
+
+    <Button
+        android:id="@+id/btn_parallel_async_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="handleButton"
+        android:text="Async Task Parallel" />
+
+    <Button
+        android:id="@+id/btn_executer_manager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="handleButton"
+        android:text="Executor services" />
+
+    <Button
+        android:id="@+id/btn_run_on_ui_thread"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="run on UI Thread"
+        android:onClick="handleButton" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Run on UI Thread"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/tv_work_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="workers information"
+        android:textSize="20dp" />
+
+
+</LinearLayout>
